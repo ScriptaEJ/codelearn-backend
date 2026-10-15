@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["uvicorn", "app.main:app", "--port", "5000", "--host", "0.0.0.0"]
+CMD ["sh", "start.sh"]

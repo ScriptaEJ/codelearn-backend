@@ -27,7 +27,7 @@ services:
       db:
         condition: service_healthy
     command: >
-      sg -c "alembic upgrade head"
+      sg -c "alembic upgrade head && uvicorn app.main:app --port 5000 --host 0.0.0.0"
     networks: 
       - rede_local
 

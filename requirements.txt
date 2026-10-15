@@ -4,3 +4,4 @@ sqlalchemy
 dotenv
 alembic
 psycopg2-binary
+pydantic
